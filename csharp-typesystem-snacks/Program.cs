@@ -182,7 +182,6 @@ Console.WriteLine("------------------------");
 
 // ------------------------------------------------------------
 
-*/
 // Snack 8: Crea un array di numeri interi e fai la somma di tutti gli elementi che sono in posizione dispari.
 
 // creo un array di numeri interi
@@ -208,3 +207,21 @@ Console.WriteLine($"La somma di tutti gli elementi che sono in posizione dispari
 Console.WriteLine("------------------------");
 
 // ------------------------------------------------------------
+
+*/
+// Snack 9: Crea un array vuoto e chiedi all’utente un numero da inserire nell’array. Continua a chiedere i numeri all’utente e a inserirli nell’array, fino a quando la somma degli elementi è minore di 50.
+
+// inizializzo un array vuoto di 49 elementi
+float[] emptyArraySnack9 = new float[49];
+
+// ciclo finchè i è inferiori alla lunghezza del mio array
+for (int i = 0; i < emptyArraySnack9.Length; i++)
+{
+    Console.Write("Inserisci un numero: ");
+
+    // salvo in una variabile float il numero inserito dall'utente, dopo averlo convertito in un float
+    float newUserNumber = float.Parse(Console.ReadLine());
+
+    // sostituisco l'elemento nell'array in posizione i, con il numero inserito dall'utente
+    emptyArraySnack9[i] = newUserNumber;
+}
