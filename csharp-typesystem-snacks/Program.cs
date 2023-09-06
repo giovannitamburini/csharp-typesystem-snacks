@@ -157,7 +157,7 @@ Console.WriteLine("------------------------");
 
 // ------------------------------------------------------------
 
-*/
+
 // Snack 7: Crea un array vuoto. Chiedi per 6 volte all’utente di inserire un numero, se è dispari inseriscilo nell’array.
 
 // creo un array vuoto
@@ -177,3 +177,34 @@ for (int i = 0; i < 6; i++)
         emptyArray[i] = userNumberSnack7;
     }
 }
+
+Console.WriteLine("------------------------");
+
+// ------------------------------------------------------------
+
+*/
+// Snack 8: Crea un array di numeri interi e fai la somma di tutti gli elementi che sono in posizione dispari.
+
+// creo un array di numeri interi
+int[] integerNumbers = { 1, 2, 3, 4, 5, 6, 7, 8, 9 };
+
+// inizializzo una variabile int per la somma dei numeri in posizione dispari all'interno dell'array
+int sumElementsInOddPosition = 0;
+
+// ciclo i volte, dove i è uguale alla lunghezza del mio array di numeri interi
+for (int i = 0; i < integerNumbers.Length; i++)
+{
+    // controllo se il numero è in posizione dispari all'interno dell'array
+    if (i % 2 != 0)
+    {
+        // aggiungo alla somma totale il valore dell'elemento in posizione dispari
+        sumElementsInOddPosition += integerNumbers[i];
+    }
+}
+
+// stampo a video il valore della somma di tutti gli elementi in posizione dispari
+Console.WriteLine($"La somma di tutti gli elementi che sono in posizione dispari all'interno dell'array è: {sumElementsInOddPosition}");
+
+Console.WriteLine("------------------------");
+
+// ------------------------------------------------------------
