@@ -132,7 +132,7 @@ Console.WriteLine("------------------------");
 
 // ------------------------------------------------------------
 
-*/
+
 // Snack 6: In un array sono contenuti i nomi degli invitati alla festa del grande Gatsby. Chiedi all’utente il suo nome e comunicagli se può partecipare o meno alla festa.
 
 // array degli invitati
@@ -157,3 +157,23 @@ Console.WriteLine("------------------------");
 
 // ------------------------------------------------------------
 
+*/
+// Snack 7: Crea un array vuoto. Chiedi per 6 volte all’utente di inserire un numero, se è dispari inseriscilo nell’array.
+
+// creo un array vuoto
+int[] emptyArray = new int[6];
+
+// ciclo 6 volte, tante volte quante sono quelle a cui devo chiedere un numero all'utente
+for (int i = 0; i < 6; i++)
+{
+    // chiedo all'utente di inserire un numero
+    Console.Write($"Inserisci un {i + 1}° numero: ");
+    int userNumberSnack7 = int.Parse(Console.ReadLine());
+
+    // controllo se il numero è dispari
+    if (userNumberSnack7 % 2 != 0)
+    {
+        // inserisco il numero dispari all'interno dell'array
+        emptyArray[i] = userNumberSnack7;
+    }
+}
