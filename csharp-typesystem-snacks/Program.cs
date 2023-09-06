@@ -1,6 +1,5 @@
 ﻿// See https://aka.ms/new-console-template for more information
 
-/*
 
 // Snack 1: L’utente inserisce due numeri in successione. Il software stampa il maggiore.
 
@@ -208,7 +207,7 @@ Console.WriteLine("------------------------");
 
 // ------------------------------------------------------------
 
-*/
+
 // Snack 9: Crea un array vuoto e chiedi all’utente un numero da inserire nell’array. Continua a chiedere i numeri all’utente e a inserirli nell’array, fino a quando la somma degli elementi è minore di 50.
 
 // inizializzo un array vuoto di 49 elementi
@@ -224,4 +223,45 @@ for (int i = 0; i < emptyArraySnack9.Length; i++)
 
     // sostituisco l'elemento nell'array in posizione i, con il numero inserito dall'utente
     emptyArraySnack9[i] = newUserNumber;
+}
+
+Console.WriteLine("------------------------");
+
+// ------------------------------------------------------------
+
+
+// Snack 10: Fai inserire un numero, che chiameremo N, all’utente. Genera N array, ognuno formato da 10 numeri casuali tra 1 e 100. Ogni volta che ne crei uno, stampalo a schermo.
+
+Console.Write("inserisci un numero intero: ");
+
+// salvo in una variabile integer il numero inserito dall'utente che utilizzerò per creare N array
+int N = int.Parse(Console.ReadLine());
+
+// inizializzo un indice per il ciclo while
+int index = 1;
+
+// ciclo N volte
+while (index <= N)
+{
+    int[] newArraySnack9 = new int[10];
+
+    for (int i = 0; i < 10; i++)
+    {
+        // creo un numero randomico
+        Random random = new ();
+        int randomNumber = random.Next(1, 101);
+
+        newArraySnack9[i] = randomNumber;
+    }
+
+    Console.WriteLine($"L'array n° {index} è composto dai seguenti numeri: ");
+    foreach (int item in newArraySnack9)
+    {
+        Console.Write($"{item} ");
+    }
+
+    Console.WriteLine();
+
+    // aggiungo un unità all'index per non creare un loop infinito
+    index++;
 }
