@@ -109,7 +109,7 @@ Console.WriteLine("------------------------");
 
 // ------------------------------------------------------------
 
-*/
+
 // Snack 5: Il software chiede all’utente di inserire un numero. Se il numero inserito è pari, stampa il numero, se è dispari, stampa il numero successivo.
 
 Console.Write("Inserisci un numero intero: ");
@@ -127,3 +127,33 @@ if(userNumberSnack5 % 2 == 0)
     // stampo a video il numero dell'utente + 1 visto che è dispari
     Console.WriteLine($"{userNumberSnack5 + 1}, poichè il numero che hai inserito è dispari");
 }
+
+Console.WriteLine("------------------------");
+
+// ------------------------------------------------------------
+
+*/
+// Snack 6: In un array sono contenuti i nomi degli invitati alla festa del grande Gatsby. Chiedi all’utente il suo nome e comunicagli se può partecipare o meno alla festa.
+
+// array degli invitati
+string[] partyGuests = {"Giulia", "Giovanni", "Giorgio", "Danilo", "Enrico", "Federico" };
+
+Console.Write("Qual'è il tuo nome? ");
+
+// chiedo il nome alla persona da controllare se presente nell'array degli invitati
+string person = Console.ReadLine();
+
+// controllo se il nome scritto dall'utente è contenuto nell'array
+if (partyGuests.Contains(person))
+{
+    Console.WriteLine($"Prego {person}, puoi entrare");
+
+} else
+{
+    Console.WriteLine($"Mi dispiace {person} ma il tuo nome non è nella lista e quindi non puoi entrare");
+}
+
+Console.WriteLine("------------------------");
+
+// ------------------------------------------------------------
+
