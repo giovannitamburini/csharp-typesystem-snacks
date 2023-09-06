@@ -1,6 +1,6 @@
 ﻿// See https://aka.ms/new-console-template for more information
 
-
+/*
 
 // Snack 1: L’utente inserisce due numeri in successione. Il software stampa il maggiore.
 
@@ -109,3 +109,21 @@ Console.WriteLine("------------------------");
 
 // ------------------------------------------------------------
 
+*/
+// Snack 5: Il software chiede all’utente di inserire un numero. Se il numero inserito è pari, stampa il numero, se è dispari, stampa il numero successivo.
+
+Console.Write("Inserisci un numero intero: ");
+
+// chiedo all'utente di inserire un numero intero, e ne faccio la conversione in intero
+int userNumberSnack5 = int.Parse(Console.ReadLine());
+
+if(userNumberSnack5 % 2 == 0)
+{
+    // stampo a video il numero dell'utente visto che è pari
+    Console.WriteLine($"{userNumberSnack5} è pari");
+
+} else
+{
+    // stampo a video il numero dell'utente + 1 visto che è dispari
+    Console.WriteLine($"{userNumberSnack5 + 1}, poichè il numero che hai inserito è dispari");
+}
