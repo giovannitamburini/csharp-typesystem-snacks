@@ -86,3 +86,26 @@ Console.WriteLine($"La somma dei numeri che hai inserito è uguale a {sumUserNum
 Console.WriteLine("------------------------");
 
 // ------------------------------------------------------------
+
+
+// Snack 4: Calcola la somma e la media dei numeri da 2 a 10.
+
+int[] numbersFrom2to10 = { 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+
+int sumNumbersFrom2to10 = 0;
+
+for (int i = 0; i < numbersFrom2to10.Length; i++)
+{
+    sumNumbersFrom2to10 += numbersFrom2to10[i];
+}
+
+Console.WriteLine($"la somma dei numeri da 2 a 10 è pari a {sumNumbersFrom2to10}");
+
+float avarageNumbersFrom2to10 = (float)sumNumbersFrom2to10 / numbersFrom2to10.Length;
+
+Console.WriteLine($"la media dei numeri da 2 a 10 è pari a: {avarageNumbersFrom2to10}");
+
+Console.WriteLine("------------------------");
+
+// ------------------------------------------------------------
+
