@@ -1,5 +1,6 @@
 ﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+
+
 
 // Snack 1: L’utente inserisce due numeri in successione. Il software stampa il maggiore.
 
@@ -55,3 +56,33 @@ if (firstWord.Length > secondWord.Length)
 }
 
 Console.WriteLine("------------------------");
+
+// ------------------------------------------------------------
+
+
+
+// Snack 3: Il software deve chiedere per 10 volte all’utente di inserire un numero. Il programma stampa la somma di tutti i numeri inseriti.
+
+// inizializzo un array che conterrà 10 elementi
+int[] userNumbers = new int[10];
+
+// inizializzo una variabile int per la somma dei numeri inseiri dall'utente
+int sumUserNumbers = 0;
+
+// chiedo all'utente 10 volte di inseirire un numero
+for(int i = 0; i < 10; i++)
+{
+    Console.Write($"inserisci il {i + 1}° numero intero casuale: ");
+
+    userNumbers[i] = int.Parse(Console.ReadLine());
+
+    // aggiungo alla sommatoria il valore dell'elemento ì dell'array userNumbers
+    sumUserNumbers += userNumbers[i];
+}
+
+// stampo a video la somma dei numeri inseriti dall'utente
+Console.WriteLine($"La somma dei numeri che hai inserito è uguale a {sumUserNumbers}");
+
+Console.WriteLine("------------------------");
+
+// ------------------------------------------------------------
